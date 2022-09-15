@@ -92,25 +92,25 @@ const BlogSingle = () => {
                 <div className="blog-left-content-share">
                   <h3>Share this post</h3>
                   <ul>
-                    <li>
+                    {/* <li>
                       <Link to="/">
+                        <i className="fab fa-linkedin-in" />
+                      </Link>
+                    </li> */}
+                    <li>
+                      <a href="https://www.facebook.com/DkorStudio" target={"_blank"} rel="noreferrer">
                         <i className="fab fa-facebook-f" />
-                      </Link>
+                      </a>
                     </li>
                     <li>
-                      <Link to="/">
-                        <i className="fab fa-twitter" />
-                      </Link>
+                      <a href="https://www.instagram.com/dkorstudio/" target={"_blank"} rel="noreferrer">
+                        <i className="fab fa-instagram" />
+                      </a>
                     </li>
                     <li>
-                      <Link to="/">
+                      <a href="https://www.youtube.com/channel/UCxFJNzrlZSgXtU9_gVI90Gw/featured" target={"_blank"} rel="noreferrer">
                         <i className="fab fa-youtube" />
-                      </Link>
-                    </li>
-                    <li>
-                      <Link to="/">
-                        <i className="fab fa-instagram-square" />
-                      </Link>
+                      </a>
                     </li>
                   </ul>
                 </div>

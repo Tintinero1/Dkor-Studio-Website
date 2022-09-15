@@ -1,7 +1,7 @@
 import React from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
-import projectImg1 from "../../img/project-1.png";
+import projectImg1 from "../../img/otro1.png";
 import projectImg2 from "../../img/colinas1.jpeg";
 import projectImg3 from "../../img/mazatlan1.jpg";
 
@@ -18,16 +18,16 @@ const ProjectSection = () => {
         <div className="row align-items-center">
           <div className="col-sm-6">
             <div className="site-heading">
-              <h3 className="sub-title">PROYECTOS</h3>
-              <h2 className="section-title">Trabajo Destacado.</h2>
+              <h3 id="nuestros-proyectos" className="sub-title">PROYECTOS</h3>
+              <h2 className="section-title">En Proceso.</h2>
             </div>
             <div className="project-box" data-aos="fade-up">
-              <Link to="/projects-single">
+              <a href={projectImg1} target={"_blank"} rel="noreferrer">
                 <img src={projectImg1} alt="img" />
                 <h3>
-                  PROYECTO COLINAS
+                  OTRO
                 </h3>
-                <p>INTERIOR</p>
+                <p>EXTERIOR</p>
                 <div className="project-zoom">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -48,17 +48,17 @@ const ProjectSection = () => {
                     <circle stroke="#ffffff" cx={12} cy={12} r={3} />
                   </svg>
                 </div>
-              </Link>
+              </a>
             </div>
-            <div className="text-center mt-5 d-lg-block d-none">
+            {/* <div className="text-center mt-5 d-lg-block d-none">
               <Link to="/projects" className="cta-btn btn-fill">
                 Ver Proyectos
               </Link>
-            </div>
+            </div> */}
           </div>
           <div className="col-sm-6">
             <div className="project-box" data-aos="fade-up">
-              <Link to="/projects-single">
+              <a href={projectImg3} target={"_blank"} rel="noreferrer">
                 <img src={projectImg3} alt="img" />
                 <h3>
                   DEPARTAMENTOS
@@ -85,10 +85,10 @@ const ProjectSection = () => {
                     <circle stroke="#ffffff" cx={12} cy={12} r={3} />
                   </svg>
                 </div>
-              </Link>
+              </a>
             </div>
             <div className="project-box" data-aos="fade-up">
-              <Link to="/projects-single">
+              <a href={projectImg2} target={"_blank"} rel="noreferrer">
                 <img src={projectImg2} alt="img" />
                 <h3>
                   COLINAS
@@ -114,7 +114,7 @@ const ProjectSection = () => {
                     <circle stroke="#ffffff" cx={12} cy={12} r={3} />
                   </svg>
                 </div>
-              </Link>
+              </a>
             </div>
           </div>
         </div>

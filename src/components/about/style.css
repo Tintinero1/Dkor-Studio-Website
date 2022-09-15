@@ -21,6 +21,14 @@
 	margin-bottom: 30px;
 }
 
+.counter-text{
+	font-size: 50px;
+}
+
+.counter-box h2 span{
+	font-size: 40px;
+}
+
 .counter-box h2 {
 	font-size: 48px;
 	margin: 0;
@@ -94,6 +102,7 @@
 	color: white;
 }
 
+
 .color-counter {
 	color: white;
 }
@@ -101,6 +110,22 @@
 
 /*Responsive*/
 @media(max-width: 767px) {
+	
+	.counter-box p {
+		line-height: 24px;
+		color: white;
+		font-weight: 600;
+		text-transform: capitalize;
+		font-size: 5px;
+		letter-spacing: 2px;
+		margin: 0;
+	}
+	.counter-box h2 span{
+		font-size: 20px;
+	}
+	.section-title {
+		font-size: 5px;
+	}
 	.signature-left {
 		width: 50%;
 	}

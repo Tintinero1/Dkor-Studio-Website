@@ -19,7 +19,7 @@ import "./style.css";
 
 const ServiceSection = () => {
   return (
-    <section className="service-area">
+    <section id="nuestros-servicios" className="service-area">
       <div className="container">
         <div className="row justify-content-center">
           <div className="col-lg-4 col-md-6">
@@ -27,16 +27,17 @@ const ServiceSection = () => {
               className="service-box"
               data-aos="fade-up"
               data-aos-delay="100"
+              style={{height: "450px"}}
             >
               <div className="service-icon">
-                <img src={serviceIcon1} alt="img" />
+                <img src={serviceIcon1} width="90px" alt="img" />
               </div>
               <div className="service-text">
-                <h3>Project Managment</h3>
+                <h3>Project Management</h3>
                 <p>
                   Desarrollamos el ciclo entero de documentación &amp; detalles completos.
                 </p>
-                <Link to="/service-single" className="cta-btn btn-border">
+                <Link to="/project-management" className="cta-btn btn-border">
                   Leer más
                 </Link>
               </div>
@@ -48,16 +49,18 @@ const ServiceSection = () => {
               className="service-box"
               data-aos="fade-up"
               data-aos-delay="250"
+              style={{height: "450px"}}
             >
               <div className="service-icon">
                 <img src={serviceIcon2} alt="img" />
               </div>
               <div className="service-text">
                 <h3>Arquitectura</h3>
+                <br></br>
                 <p>
                   Ofrecemos la máxima satisfacción a nuestros clientes.
                 </p>
-                <Link to="/service-single" className="cta-btn btn-border">
+                <Link to="/architecture" className="cta-btn btn-border">
                   Leer más
                 </Link>
               </div>
@@ -69,6 +72,7 @@ const ServiceSection = () => {
               className="service-box"
               data-aos="fade-up"
               data-aos-delay="400"
+              style={{height: "450px"}}
             >
               <div className="service-icon">
                 <img src={serviceIcon3} alt="img" />
@@ -78,7 +82,7 @@ const ServiceSection = () => {
                 <p>
                   Aseguramos la totalidad de la obra, en tiempo y forma. Solo Calidad.
                 </p>
-                <Link to="/service-single" className="cta-btn btn-border">
+                <Link to="/construction" className="cta-btn btn-border">
                   Leer más
                 </Link>
               </div>

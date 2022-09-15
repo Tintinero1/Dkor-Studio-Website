@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import Logo from "../../img/Logo.jpeg";
 import MobileMenu from "../../components/MobileMenu";
 import { Link } from "react-router-dom";
@@ -6,15 +6,15 @@ import { Link } from "react-router-dom";
 import "./style.css";
 
 const Header = () => {
-  const [show, setShow] = useState(false);
+  // const [show, setShow] = useState(false);
 
-  const SubmitHandler = (e) => {
-    e.preventDefault();
-  };
+  // const SubmitHandler = (e) => {
+  //   e.preventDefault();
+  // };
 
-  const onClick = (e) => {
-    e.preventDefault();
-  };
+  // const onClick = (e) => {
+  //   e.preventDefault();
+  // };
 
   return (
     <header className="header">
@@ -34,48 +34,34 @@ const Header = () => {
                       <Link to="/">Inicio</Link>
                     </li>
                     <li>
-                      <Link to="/about" onClick={onClick}>Acerca de</Link>
+                      <Link to="/acerca-de">Acerca de</Link>
                       <ul>
                         <li>
-                          <Link to="/portfolio">Quienes Somos</Link>
+                          <Link to="/acerca-de">Quienes Somos</Link>
                         </li>
                         <li>
-                          <Link to="/team">Que Hacemos</Link>
+                          <Link to="/acerca-de">Que Hacemos</Link>
                         </li>
                       </ul>
                     </li>
                     <li>
-                      <Link to="/" onClick={onClick}>
+                      <a href="/#nuestros-proyectos">
                         Proyectos
-                      </Link>
-                      <ul>
-                        <li>
-                          <Link to="/projects">Proyectos</Link>
-                        </li>
-                        <li>
-                          <Link to="/projects-single">Detalles</Link>
-                        </li>
-                      </ul>
+                      </a>
                     </li>
                     <li>
-                      <Link to="/" onClick={onClick}>
+                      <a href="/#nuestros-servicios">
                         Servicios
-                      </Link>
+                      </a>
                       <ul>
                         <li>
-                          <Link to="/service">Arquitectura</Link>
+                          <Link to="/architecture">Arquitectura</Link>
                         </li>
                         <li>
-                          <Link to="/service-single">Proyectos</Link>
+                          <Link to="/construction">Construcción</Link>
                         </li>
                         <li>
-                          <Link to="/service">Construcción</Link>
-                        </li>
-                        <li>
-                          <Link to="/service-single">Project Managment</Link>
-                        </li>
-                        <li>
-                          <Link to="/service-single">Project Managment BIM</Link>
+                          <Link to="/project-management">Project Managment BIM</Link>
                         </li>
                         {/* <li>
                           <Link to="/service">Gestionamiento de planos</Link>

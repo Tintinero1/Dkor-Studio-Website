@@ -11,7 +11,7 @@ const Tour = () => {
       <div className="container">
         <div className="row">
           <div className="col-lg-6 offset-lg-6 col-md-8 offset-md-4">
-            <div className="site-heading">
+            <div className="site-heading mobile">
               <h3 className="sub-title">TOMA UN TOUR!</h3>
               <h2 className="section-title">Hacemos las cosas mejor</h2>
             </div>

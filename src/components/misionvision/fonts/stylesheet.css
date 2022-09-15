@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'SansSerifFLF';
+    src: url('SansSerifFLF.eot');
+    src: url('SansSerifFLF.eot?#iefix') format('embedded-opentype'),
+        url('SansSerifFLF.woff2') format('woff2'),
+        url('SansSerifFLF.woff') format('woff'),
+        url('SansSerifFLF.ttf') format('truetype'),
+        url('SansSerifFLF.svg#SansSerifFLF') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+

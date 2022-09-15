@@ -39,25 +39,25 @@ class Hero extends Component {
       <section className="hero-area">
         <div className="hero-social">
           <ul>
-            <li>
+            {/* <li>
               <Link to="/">
                 <i className="fab fa-linkedin-in" />
               </Link>
-            </li>
+            </li> */}
             <li>
-              <Link to="/">
+              <a href="https://www.facebook.com/DkorStudio" target={"_blank"} rel="noreferrer">
                 <i className="fab fa-facebook-f" />
-              </Link>
+              </a>
             </li>
             <li>
-              <Link to="/">
+              <a href="https://www.instagram.com/dkorstudio/" target={"_blank"} rel="noreferrer">
                 <i className="fab fa-instagram" />
-              </Link>
+              </a>
             </li>
             <li>
-              <Link to="/">
+              <a href="https://www.youtube.com/channel/UCxFJNzrlZSgXtU9_gVI90Gw/featured" target={"_blank"} rel="noreferrer">
                 <i className="fab fa-youtube" />
-              </Link>
+              </a>
             </li>
           </ul>
           {/* <p>Síguenos en redes sociales</p> */}
@@ -82,12 +82,12 @@ class Hero extends Component {
                   <div className="hero-text">
                     <h2>
                       Dkor Studio <br />
-                      Arquitectura y Construcción 
+                      <span>Arquitectura más Construcción</span> 
                     </h2>
                     <div className="hero-action">
-                      <Link to="/projects" className="cta-btn btn-fill">
+                      <a href="/#nuestros-proyectos" className="cta-btn btn-fill">
                         Ver proyectos
-                      </Link>
+                      </a>
                       <Link to="/contact" className="cta-btn btn-border">
                         Contáctanos
                       </Link>
@@ -101,7 +101,7 @@ class Hero extends Component {
                         <div className="waves wave-3" />
                       </div>
                     </div>
-                    <VideoModal videoId="7XZuLquT9gk" />
+                    <VideoModal videoId="wIHun9n07jw" />
                   </div>
                 </div>
               </div>
@@ -115,7 +115,7 @@ class Hero extends Component {
                   <div className="hero-text">
                     <h2>
                       Dkor Studio <br />
-                      Arquitectura y Construcción
+                      <span>Arquitectura más Construcción</span> 
                     </h2>
                     <div className="hero-action">
                       <Link to="/projects" className="cta-btn btn-fill">
@@ -134,7 +134,7 @@ class Hero extends Component {
                         <div className="waves wave-3" />
                       </div>
                     </div>
-                    <VideoModal videoId="7XZuLquT9gk" />
+                    <VideoModal videoId="wIHun9n07jw" />
                   </div>
                 </div>
               </div>

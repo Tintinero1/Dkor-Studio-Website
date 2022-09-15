@@ -5,6 +5,12 @@ import Homepage from '../HomePage'
 import AboutPage from '../AboutPage'
 import ProjectPage from '../ProjectPage'
 import ProjectSinglePage from '../ProjectSinglePage'
+import ProjectManagement from '../ProjectManagement'
+import Construction from '../Construction'
+import Architecture from '../Architecture'
+import MisionVisionPage from '../MisionVisionPage'
+// import ProjectPage from '../ProjectPage'
+// import ProjectPage from '../ProjectPage'
 import ServicePage from '../ServicePage'
 import ServiceSinglePage from '../ServiceSinglePage'
 import PortfolioPage from '../PortfolioPage'
@@ -28,6 +34,10 @@ const AllRoute = () => {
             <Route path='/about' component={AboutPage} />
             <Route path='/projects' component={ProjectPage} />
             <Route path='/projects-single' component={ProjectSinglePage} />
+            <Route path='/project-management' component={ProjectManagement} />
+            <Route path='/construction' component={Construction} />
+            <Route path='/architecture' component={Architecture} />
+            <Route path='/acerca-de' component={MisionVisionPage} />
             <Route path='/service' component={ServicePage} />
             <Route path='/service-single' component={ServiceSinglePage} />
             <Route path='/portfolio' component={PortfolioPage} />

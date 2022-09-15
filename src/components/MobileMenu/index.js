@@ -8,79 +8,39 @@ const menus = [
   {
     id: 1,
     title: "Inicio",
-    link: "/home",
+    link: "/",
   },
 
   {
     id: 2,
     title: "Acerca De",
-    link: "/about",
+    link: "/acerca-de",
   },
 
   {
     id: 3,
     title: "Proyectos",
-    link: "/projects",
-    submenu: [
-      {
-        id: 31,
-        title: "Proyectos",
-        link: "/projects",
-      },
-      {
-        id: 32,
-        title: "Detalles",
-        link: "/projects-single",
-      },
-    ],
+    link: "/#nuestros-proyectos",
   },
   {
     id: 4,
     title: "Servicios",
-    link: "/service",
+    link: "/#nuestros-servicios",
     submenu: [
       {
         id: 41,
-        title: "Gestionamiento de Planos",
-        link: "/service",
+        title: "Arquitectura",
+        link: "/architecture",
       },
       {
         id: 42,
-        title: "Detalles del Servicio",
-        link: "/service-single",
-      },
-    ],
-  },
-  {
-    id: 7,
-    title: "Paginas",
-    link: "/",
-    submenu: [
-      {
-        id: 71,
-        title: "Portafolio",
-        link: "/portfolio",
+        title: "Construcción",
+        link: "/construction",
       },
       {
-        id: 75,
-        title: "Equipo",
-        link: "/team",
-      },
-      // {
-      //   id: 76,
-      //   title: "",
-      //   link: "/faq",
-      // },
-
-      {
-        id: 79,
-        title: "Contacto",
-        link: "/contact",
-      },
-      {
-        id: 70,
-        title: "Error",
-        link: "/404",
+        id: 43,
+        title: "Project Managment BIM",
+        link: "/project-management",
       },
     ],
   },
@@ -119,6 +79,11 @@ export default class MobileMenu extends Component {
         >
           <ul className="responsivemenu">
             {menus.map((item) => {
+              var redirect = <Link to={item.link}>{item.title}</Link>;
+              if(item.link.includes("#")){
+                redirect = <a href={item.link}>{item.title}</a>
+              }
+
               return (
                 <li key={item.id}>
                   {item.submenu ? (
@@ -130,7 +95,8 @@ export default class MobileMenu extends Component {
                       {item.submenu ? "" : ""}
                     </p>
                   ) : (
-                    <Link to={item.link}>{item.title}</Link>
+                    redirect
+                    // <Link to={item.link}>{item.title}</Link>
                   )}
 
                   {item.submenu ? (

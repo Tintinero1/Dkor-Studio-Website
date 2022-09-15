@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import bg from "../../img/breadcrumb-bg.jpg";
 
 import "./style.css";
 
@@ -8,32 +7,29 @@ const PageTitle = (props) => {
   return (
     <section
       className="breadcrumb-area"
-      style={{ backgroundImage: `url(${bg})` }}
+      style={{ backgroundImage: `url(${props.bg})` }}
     >
       <div className="hero-social">
         <ul>
-          <li>
-            <Link to="/">
-              <i className="fab fa-pinterest-p" />
-            </Link>
-          </li>
-          <li>
-            <Link to="/">
-              <i className="fab fa-facebook-f" />
-            </Link>
-          </li>
-          <li>
-            <Link to="/">
-              <i className="fab fa-instagram" />
-            </Link>
-          </li>
-          <li>
-            <Link to="/">
-              <i className="fab fa-twitter" />
-            </Link>
-          </li>
+            <li>
+              <div></div>
+            </li>
+            <li>
+              <a href="https://www.facebook.com/DkorStudio" target={"_blank"} rel="noreferrer">
+                <i className="fab fa-facebook-f" />
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/dkorstudio/" target={"_blank"} rel="noreferrer">
+                <i className="fab fa-instagram" />
+              </a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com/channel/UCxFJNzrlZSgXtU9_gVI90Gw/featured" target={"_blank"} rel="noreferrer">
+                <i className="fab fa-youtube" />
+              </a>
+            </li>
         </ul>
-        <p>Follow Us</p>
       </div>
       <div className="container">
         <div className="row">

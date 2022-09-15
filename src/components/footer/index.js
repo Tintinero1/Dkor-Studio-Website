@@ -39,17 +39,17 @@ const Footer = () => {
                 <h3>Links Rápidos</h3>
                 <ul>
                   <li>
-                    <Link to="/about">Acerca De</Link>
+                    <Link to="/acerca-de">Acerca De</Link>
                   </li>
-                  <li>
+                  {/* <li>
                     <Link to="/projects">Nuestros Proyectos</Link>
-                  </li>
-                  <li>
+                  </li> */}
+                  {/* <li>
                     <Link to="/service">Nuestros Servicios</Link>
-                  </li>
-                  <li>
+                  </li> */}
+                  {/* <li>
                     <Link to="/team">Conoce al Equipo</Link>
-                  </li>
+                  </li> */}
                   <li>
                     <Link to="/contact">Contáctanos</Link>
                   </li>

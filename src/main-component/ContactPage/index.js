@@ -9,7 +9,7 @@ const ContactPage =() => {
     return(
         <Fragment>
             <Header/>
-            <PageTitle pageTitle={'CONTACT'} pagesub={'Contact'}/> 
+            <PageTitle pageTitle={'CONTACTO'} pagesub={'CONTACTO'}/> 
             <Contactpage/>
             <Footer/>
         </Fragment>
