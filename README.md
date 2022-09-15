@@ -1,6 +1,6 @@
 #B78D65
 
-Dkor
+Dkor Comments
 Main green: #97aaa4
 Second red: #ac6664
 Third white: white
