@@ -118,9 +118,9 @@ class Hero extends Component {
                       <span>Arquitectura + Construcción</span> 
                     </h2>
                     <div className="hero-action">
-                      <Link to="/#nuestros-proyectos" className="cta-btn btn-fill">
-                        Ver proyectos
-                      </Link>
+                      <a href="/#nuestros-proyectos" className="cta-btn btn-fill">
+                          Ver proyectos
+                      </a>
                       <Link to="/contact" className="cta-btn btn-border">
                         Contáctanos 
                       </Link>
