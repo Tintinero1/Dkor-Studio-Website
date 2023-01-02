@@ -82,7 +82,7 @@ class Hero extends Component {
                   <div className="hero-text">
                     <h2>
                       Dkor Studio <br />
-                      <span>Arquitectura más Construcción</span> 
+                      <span>Arquitectura + Construcción</span> 
                     </h2>
                     <div className="hero-action">
                       <a href="/#nuestros-proyectos" className="cta-btn btn-fill">
@@ -115,10 +115,10 @@ class Hero extends Component {
                   <div className="hero-text">
                     <h2>
                       Dkor Studio <br />
-                      <span>Arquitectura más Construcción</span> 
+                      <span>Arquitectura + Construcción</span> 
                     </h2>
                     <div className="hero-action">
-                      <Link to="/projects" className="cta-btn btn-fill">
+                      <Link to="/#nuestros-proyectos" className="cta-btn btn-fill">
                         Ver proyectos
                       </Link>
                       <Link to="/contact" className="cta-btn btn-border">

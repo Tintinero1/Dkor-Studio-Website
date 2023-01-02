@@ -29,7 +29,7 @@ const Footer = () => {
                     <i className="fas fa-envelope" /> carlos.ornelas@dkorstudio67.com
                   </li>
                   <li>
-                    <i className="fas fa-map" /> <a href="https://goo.gl/maps/yKiRxwjaS8Ww4wcT7" target={"_blank"} rel="noreferrer">(Brik 10) Av. Juan Sarabia 8365, Zona Centro, 22000 Tijuana, B.C.</a>
+                    <i className="fas fa-map" /> <a href="https://goo.gl/maps/yKiRxwjaS8Ww4wcT7" target={"_blank"} rel="noreferrer">Calle Decima #8351 I local C Zona Centro. Tijuana, Baja California, México.</a>
                   </li>
                 </ul>
               </div>
